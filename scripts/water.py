@@ -13,6 +13,9 @@ GPIO.setup(18, GPIO.OUT)
 GPIO.setup(22, GPIO.OUT)
 GPIO.setup(23, GPIO.OUT)
 
+if float(sys.argv[1]) > 30 or float(sys.argv[2]) > 30 or float(sys.argv[3]) > 30 or float(sys.argv[4]) > 30:
+	die("Can't water for more than 30 mins!"); #Just in case someone does something dumb
+
 GPIO.output(17, GPIO.HIGH)
 time.sleep(60 * float(sys.argv[1]))
 GPIO.output(17, GPIO.LOW)
