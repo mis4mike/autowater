@@ -23,6 +23,7 @@
 	?>
 	<?php
 		require('./includes/controls.php');
+		require('./includes/map.php');
 	?>
 
 </body>
