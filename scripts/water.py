@@ -1,5 +1,8 @@
 #!/usr/bin/python
 
+# GPIO pins requre sudo access. To run this over the web, www-data needs to be in the sudoers file
+# echo "www-data ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
+
 import sys
 import time
 import RPi.GPIO as GPIO

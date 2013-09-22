@@ -1,9 +1,10 @@
 <?php
-	$args = $_SERVER['argv'];
+	$args = $_GET;
 	
 	if($args['action'] == 'water') {
 		//If we're watering, get the times (in minutes) per zone. Zones 3 and 4 are offline
-		exec('./scripts/wayer.py '.$args['zone1'].' '.$args['zone2'].' 0 0');
+		$cmd = 'python ./scripts/water.py '.$args['zone1'].' '.$args['zone2'].' 0 0';
+		$output = shell_exec('sudo python ./scripts/water.py '.$args['zone1'].' '.$args['zone2'].' 0 0');
 	}
 ?>
 
@@ -14,7 +15,11 @@
 </head>
 <body>
 	<h1>AUTOWATER!</h1>
-
+	<?php
+		print_r($cmd);
+		/*print_r($args);*/
+		print_r($output);
+	?>
 
 </body>
 </html>
