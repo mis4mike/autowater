@@ -12,6 +12,7 @@
 <html>
 <head>
 	<title> AUTOWATER! </title>
+	<link rel="stylesheet" href="/public/css/autowater.css" type="text/css" />
 </head>
 <body>
 	<h1>AUTOWATER!</h1>

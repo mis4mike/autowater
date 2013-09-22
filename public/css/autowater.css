@@ -1,0 +1,15 @@
+body {
+	font-family: sans;
+}
+
+#watering-controls {
+	font-size: 20px;
+}
+#watering-controls div {
+	margin-bottom: 10px;
+}
+#watering-controls input[type="number"] {
+	max-width: 40px;
+	height: 24px;
+	font-size: 20px;
+}
